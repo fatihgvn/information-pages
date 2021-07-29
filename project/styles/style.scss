@@ -1,0 +1,149 @@
+@import "../../func";
+
+
+@include keyframes(animate-1) {
+    0% {
+        opacity: 0;
+        @include transform(rotate(-50deg) scale(0));
+    }
+
+    50% {
+        opacity: 1;
+        @include transform(rotate(20deg) scale(1.2));
+    }
+
+    80% {
+        @include transform(rotate(-10deg) scale(0.9));
+    }
+
+    100% {
+        
+        @include transform(rotate(0deg) scale(1));
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: #d9d9d9;
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+
+    max-width: 720px;
+    width: calc(100% - 1rem);
+
+    text-align: center;
+
+    .stateicon{
+        width: 150px;
+        padding-bottom: .5rem;
+
+
+        @include animation(0, 1.2s, animate-1, ease);
+
+        &.size-xs{
+            width: 100px;
+        }
+        &.size-s{
+            width: 150px;
+        }
+        &.size-m{
+            width: 200px;
+        }
+        &.size-l{
+            width: 250px;
+        }
+    }
+    
+    h1{
+        color: #353535;
+        text-align: center;
+        font-size: 1.5rem;
+        padding-bottom: .75rem;
+    }
+    p{
+        color: #555;
+        font-size: 1rem;
+        padding-bottom: .5rem;
+    }
+
+    .navigator{
+        padding: 1rem 0;
+        .btn{
+            background: #6495ed;
+            padding: .5rem .8rem;
+            color: #fff;
+            text-decoration: none;
+            margin: .75rem;
+            font-weight: 700;
+            border-radius: .25rem;
+            display: inline-block;
+
+            @include animation-style(all 0.15s ease-in);
+
+            @include box-shadow(.1rem, .1rem, .3rem, #919191);
+
+            &:hover {
+                background: #5780cc;
+                @include transform(scale(1.05));
+            }
+
+            &.btn-primer{
+                background: #6495ed;
+                color: #fff;
+                &:hover {
+                    background: #5780cc;
+                }
+            }
+            &.btn-success{
+                background: #67c100;
+                color: #fff;
+                &:hover {
+                    background: #569c06;
+                }
+            }
+            &.btn-danger{
+                background: #ff4949;
+                color: #fff;
+                &:hover {
+                    background: #e03f3f;
+                }
+            }
+            &.btn-warning{
+                background: #f7841f;
+                color: #fff;
+                &:hover {
+                    background: #e67b1e;
+                }
+            }
+        }
+    }
+}
+
+.copyright{
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    color: #999;
+    a{
+        color: #555;
+        font-weight: 500;
+        text-decoration: none;
+    }
+}
