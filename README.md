@@ -2,6 +2,8 @@
 
 **Install NodeJs**
 > https://nodejs.org/en/download/
+
+**Install node modules**
 ```
 npm install
 ```
