@@ -1,5 +1,6 @@
 @import "../../func";
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap');
 
 @include keyframes(animate-1) {
     0% {
@@ -25,6 +26,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 html, body{

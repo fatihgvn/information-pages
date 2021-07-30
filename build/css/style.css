@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;700&display=swap");
 @-webkit-keyframes animate-1 {
   0% {
     opacity: 0;
@@ -155,7 +156,8 @@
     /* Firefox 16+, IE 10+, Opera */ } }
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-family: 'Nunito', sans-serif; }
 
 html, body {
   width: 100%;
