@@ -30,6 +30,6 @@ grunt build
 
 # Screenshots
 
-![image](https://user-images.githubusercontent.com/31927632/127558153-27cde981-aa2c-49a0-ab67-3fb5ad77b21b.png)
+![image](https://user-images.githubusercontent.com/31927632/127630897-0863b624-6b18-4800-85f0-aa686a09b58e.png)
 
-![image](https://user-images.githubusercontent.com/31927632/127558180-00206523-e72b-4d3f-88ba-1b1d7a343069.png)
+![image](https://user-images.githubusercontent.com/31927632/127630927-f410d72e-c5f7-4b61-8058-969df88d20c5.png)
